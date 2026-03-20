@@ -1,4 +1,7 @@
 from datetime import datetime
+from flask import Flask, request
+
+app = Flask(__name__)
 class Question:
     def __init__(self, text, answer):
         self.text = text
