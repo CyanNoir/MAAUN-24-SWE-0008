@@ -21,9 +21,7 @@ def home():
     <h1>Welcome to the CBT App</h1>
     <a href='/quiz'>Start Quiz</a>
     """
-if __name__ == "__main__":
-    app.run(debug=True)
-    @app.route("/quiz", methods=["GET", "POST"])
+@app.route("/quiz", methods=["GET", "POST"])
 def quiz():
     score = 0
 
@@ -61,4 +59,5 @@ def quiz():
         <button type="submit">Submit</button>
     </form>
     """
-    
+if __name__ == "__main__":
+    app.run(debug=True)
