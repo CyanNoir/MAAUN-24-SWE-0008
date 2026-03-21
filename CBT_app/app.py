@@ -49,6 +49,7 @@ def quiz():
     return """
     <h1>FORMULA1 CBT Quiz</h1>
     <body style="font-family: Arial; text-align: center;">
+    <a href="/">Go Home</a>
     <form method="post">
         <p>1. What is the pinnacle of motorsport?</p>
         <input name="q1" placeholder="Enter answer">
