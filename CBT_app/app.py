@@ -41,7 +41,7 @@ def quiz():
         time_submitted = datetime.now()
 
         return f"""
-        <h2>Your Score: {score}/4</h2>
+        <h2>Your Score: {score}/{len(questions)}</h2>
         <p>Submitted at: {time_submitted}</p>
         <a href='/'>Go Home</a>
         """
