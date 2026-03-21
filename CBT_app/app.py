@@ -15,6 +15,7 @@ questions = [
     Question("Who was the 2020 Formula1 World Champion?", "Lewis Hamilton"),
     Question("How many qualifying sessions are there in a Formula1 weekend?", "Three"),
     Question("Who was the world champion in 2007?", "Kimi Raikkonen")
+    
 ]
 @app.route("/")
 def home():
