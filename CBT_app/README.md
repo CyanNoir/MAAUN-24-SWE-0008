@@ -1,6 +1,7 @@
 # CBT Flask App
 
 This is a simple Computer-Based Test (CBT) web application built using Flask.
+This project was built as part of a university assignment.
 
 ## Features
 - Users can answer questions
