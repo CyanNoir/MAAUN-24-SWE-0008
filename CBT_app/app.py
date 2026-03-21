@@ -13,7 +13,8 @@ class Question:
 questions = [
     Question("What is the pinnacle of motorsport?", "Formula1"),
     Question("Who was the 2020 Formula1 World Champion?", "Lewis Hamilton"),
-    Question("What language is used in Flask?", "Python")
+    Question("How many qualifying sessions are there in a Formula1 weekend?", "Three"),
+    Question("Who was the world champion in 2007?", "Kimi Raikkonen")
 ]
 @app.route("/")
 def home():
@@ -29,7 +30,8 @@ def quiz():
         user_answers = [
             request.form.get("q1"),
             request.form.get("q2"),
-            request.form.get("q3")
+            request.form.get("q3"),
+            request.form.get("q4")
         ]
 
         for i in range(len(questions)):
@@ -39,7 +41,7 @@ def quiz():
         time_submitted = datetime.now()
 
         return f"""
-        <h2>Your Score: {score}/3</h2>
+        <h2>Your Score: {score}/4</h2>
         <p>Submitted at: {time_submitted}</p>
         <a href='/'>Go Home</a>
         """
@@ -53,8 +55,11 @@ def quiz():
         <p>2. Who was the 2020 Formula 1 World Champion?</p>
         <input name="q2" placeholder="Enter answer">
 
-        <p>3. What language is used in Flask?</p>
+        <p>3. How many qualifying sessions are there in a Formula1 weekend?</p>
         <input name="q3" placeholder="Enter answer">
+
+        <p>4. Who was the world champion in 2007?</p>
+        <input name="q4" placeholder="Enter answer">
 
         <br><br>
         <button type="submit">Submit</button>
