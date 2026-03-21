@@ -45,15 +45,16 @@ def quiz():
         """
 
     return """
+    <h1>FORMULA1 CBT Quiz</h1>
     <form method="post">
         <p>1. What is the pinnacle of motorsport?</p>
-        <input name="q1">
-
+        <input name="q1" placeholder="Enter answer">
+    
         <p>2. Who was the 2020 Formula 1 World Champion?</p>
-        <input name="q2">
+        <input name="q2" placeholder="Enter answer">
 
         <p>3. What language is used in Flask?</p>
-        <input name="q3">
+        <input name="q3" placeholder="Enter answer">
 
         <br><br>
         <button type="submit">Submit</button>
